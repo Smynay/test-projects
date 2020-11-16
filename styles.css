@@ -1,0 +1,117 @@
+p {
+  margin: 0;
+}
+
+.logo {
+  font-family: 'Karla';
+  display: flex;
+  gap: 9px;
+  position: relative;
+}
+
+.logo__pacman {
+  width: 0;
+  height: 0;
+  border-left: 41px solid #261f0f;
+  border-top: 41px solid #261f0f;
+  border-right: 41px solid transparent;
+  border-bottom: 41px solid transparent;
+  border-radius: 41px;
+  transform: rotate(11deg);
+  position: relative;
+  display: inline-block;
+}
+
+.logo__pacman:before {
+  content: '';
+  position: absolute;
+  left: -41px;
+  top: -41px;
+  border-left: 41px solid #261f0f;
+  border-top: 41px solid #261f0f;
+  border-right: 41px solid transparent;
+  border-bottom: 41px solid transparent;
+  border-radius: 50%;
+  transform: rotate(-113deg);
+}
+
+.pacman__pacman {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  left: -25px;
+  background-color: #00adff;
+  border-radius: 50%;
+}
+
+.pacman__pacman:before {
+  content: '';
+  width: 0;
+  height: 0;
+  left: 0;
+  top: 0;
+  border-left: 25px solid white;
+  border-top: 25px solid white;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.pacman__pacman:after {
+  content: '';
+  width: 0;
+  height: 0;
+  left: 0;
+  top: 0;
+  border-left: 25px solid white;
+  border-top: 25px solid white;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-radius: 50%;
+  transform: rotate(-113deg);
+  position: absolute;
+}
+
+.logo__text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 18px;
+  justify-content: flex-start;
+}
+
+.logo__title,
+.logo__subtitle {
+  line-height: 20px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  font-size: x-large;
+}
+
+.logo__title {
+  color: #261f0f;
+  letter-spacing: 1px;
+}
+
+.logo__subtitle {
+  margin-top: 8px;
+  display: flex;
+  color: #00adff;
+  letter-spacing: -1px;
+  flex-wrap: nowrap;
+}
+
+.subtitle__addition {
+  margin-left: 7px;
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle__addition span {
+  color: #261f0f;
+  opacity: 0.8;
+  font-size: xx-small;
+  line-height: 10px;
+  letter-spacing: normal;
+}
