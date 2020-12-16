@@ -1,0 +1,23 @@
+{
+  "name": "forasoft-test",
+  "version": "1.0.0",
+  "description": "Chatroom test project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Smynay/test-projects.git"
+  },
+  "keywords": [
+    "JS",
+    "React"
+  ],
+  "author": "Nikita Schastnyy <smynay@yandex.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Smynay/test-projects/issues"
+  },
+  "homepage": "https://github.com/Smynay/test-projects#readme"
+}
