@@ -5,9 +5,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+html {
+  font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1200 - 320)));
+  height: 100%;
 }

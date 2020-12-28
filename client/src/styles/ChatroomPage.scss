@@ -1,0 +1,43 @@
+@import './Colors.scss';
+
+.chatroom {
+  height: 100vh;
+  max-height: 100%;
+
+  &__header {
+    padding: 0.2rem 0rem;
+    background: $darkMode;
+  }
+
+  &__message-roll {
+    flex: 1 1 0;
+    position: relative;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 2rem;
+      background-color: transparent;
+    }
+
+    &:hover::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .message-roll__container {
+    max-height: 100%;
+    position: absolute;
+    top: 0px;
+    padding-right: 10px;
+  }
+}

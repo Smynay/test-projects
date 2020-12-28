@@ -8,4 +8,10 @@ router.get('/', (req, res) => {
   });
 });
 
+router.get('/invite/:code', (req, res) => {
+  res.status(200).json({
+    message: `Join to room ${req.params.code}`,
+  });
+});
+
 module.exports = router;

@@ -1,0 +1,48 @@
+@import '../../styles/Colors.scss';
+
+.message {
+  align-self: flex-start;
+  min-width: 120px;
+  margin-top: 1rem;
+  padding-right: 2rem;
+
+  &__sender {
+    color: $msgSender;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+  }
+
+  &__text {
+    color: $msgTextColor;
+    background: $fromMessage;
+    padding: 5px 0.6rem;
+    display: inline-block;
+    border-radius: 0rem 1rem 1rem 1rem;
+  }
+
+  &__time {
+    color: $msgTextColor;
+    font-size: 0.7rem;
+    text-align: left;
+    display: inline-block;
+  }
+
+  &.currentUser {
+    align-self: flex-end;
+    padding: 0px 0px 0px 2rem;
+
+    .message__sender {
+      text-align: right;
+    }
+
+    .message__text {
+      background: $yourMessage;
+      border-radius: 1rem 0rem 1rem 1rem;
+    }
+
+    .message__time {
+      text-align: right;
+    }
+  }
+}
