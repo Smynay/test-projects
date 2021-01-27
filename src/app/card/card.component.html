@@ -1,0 +1,7 @@
+<div class="card">
+  <h3 class="card__title">{{ post.title }}</h3>
+  <p class="card__content">{{ post.text }}</p>
+  <a [routerLink]="['post', id]"
+    ><app-button stretch="true" label="Перейти"></app-button
+  ></a>
+</div>

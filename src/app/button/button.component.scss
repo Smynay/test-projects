@@ -1,0 +1,19 @@
+.button {
+  background-color: #d9e7fb;
+  border: 2px solid #b6c7e1;
+
+  &_danger {
+    background-color: #f7cdcb;
+    border: 2px solid #e2c3c1;
+  }
+
+  &_stretch {
+    width: 100%;
+    text-align: center;
+  }
+
+  &_large {
+    line-height: 40px;
+    padding: 0px 15px;
+  }
+}

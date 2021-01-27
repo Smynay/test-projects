@@ -1,0 +1,34 @@
+<div class="card-form">
+  <div class="card-form__header">
+    <a routerLink="/"><app-button label="Назад" large="true"></app-button></a>
+  </div>
+  <p class="card-form__title">Запись "{{ title }}"</p>
+
+  <div class="card-form__content">
+    <input
+      type="text"
+      (input)="changeHandler($event, 'title')"
+      [value]="title"
+    />
+    <textarea
+      rows="16"
+      (input)="changeHandler($event, 'text')"
+      [value]="text"
+    ></textarea>
+  </div>
+
+  <div class="card-form__actions">
+    <app-button
+      *ngIf="store[postId]"
+      large="true"
+      danger="true"
+      label="Удалить"
+      (click)="deleteHandler()"
+    ></app-button>
+    <app-button
+      large="true"
+      label="Сохранить"
+      (click)="saveHandler()"
+    ></app-button>
+  </div>
+</div>

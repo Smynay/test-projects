@@ -1,0 +1,21 @@
+<div class="blog">
+  <h1 class="blog__title">Блог</h1>
+
+  <div class="blog__content" *ngIf="posts.length; else noCards">
+    <app-card
+      *ngFor="let post of posts; let id = index"
+      [post]="post"
+      [id]="id"
+    ></app-card>
+  </div>
+
+  <ng-template #noCards>
+    <p>Нет постов</p>
+  </ng-template>
+
+  <div class="blog__addbtn">
+    <a routerLink="/create">
+      <app-button label="+ Добавить" large="true"></app-button>
+    </a>
+  </div>
+</div>
